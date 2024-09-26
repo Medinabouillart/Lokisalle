@@ -1,0 +1,447 @@
+/* Style général pour tout le site */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #0a0a0a;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Spécifique pour le header et le footer : utiliser une autre police */
+header, footer {
+    font-family: 'Arial', sans-serif; /* Police différente pour le header et le footer */
+}
+
+/* Rappel des autres styles pour le carrousel */
+.carousel-caption h5, .carousel-caption p {
+    font-family: inherit; /* Hérite de la police globale (Playfair Display) */
+}
+
+/* Style pour la navbar (header) */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-family: 'Arial', sans-serif;
+    color: #121212;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Style spécifique pour le bouton "Se connecter" */
+.navbar-nav .btn-outline-primary {
+    border: 2px solid #000; /* Bordure noire */
+    color: #000; /* Texte en noir */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .btn-outline-primary:hover {
+    background-color: #000; /* Fond noir au survol */
+    color: #fff !important; /* Texte en blanc au survol */
+    border-color: #000; /* Conserver la bordure noire */
+}
+
+/* Style pour la bannière (hero section) */
+.hero {
+    background-color: #101010;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-text .btn {
+    background-color: #ff634700;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid, 1px, #ffffff !important;
+}
+
+.hero-text .btn:hover {
+    background-color: #ffffff;
+    color : black !important;
+}
+
+/* Section présentation */
+.presentation {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.presentation h2 {
+    font-size: 2rem;
+}
+
+.presentation p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+.btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #ff4500;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/*Carousel*/
+/* Texte centré en bas avec un fond noir sur toute la largeur */
+.carousel-caption {
+    position: absolute;
+    bottom: 0; /* Le texte et le fond noir sont placés en bas */
+    left: 0;
+    width: 100%; /* Le fond couvre toute la largeur de l'image */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    padding: 10px 20px;
+    border-radius: 5px; /* Arrondir légèrement les coins */
+    text-align: left; /* Le texte reste aligné à gauche */
+    color: #fff; /* Texte en blanc */
+}
+
+/* Style pour les titres dans le carrousel */
+.carousel-caption h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0; /* Pas de marge autour du titre */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour une meilleure lisibilité */
+}
+
+/* Style pour les paragraphes dans le carrousel */
+.carousel-caption p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Ombre pour une meilleure lisibilité */
+}
+
+/* Ajustement des images du carrousel */
+.carousel-item img {
+    width: 100%;
+    max-height: 70vh; /* Réduction de la hauteur de l'image */
+    object-fit: cover; /* L'image s'ajuste sans déformation */
+}
+
+/* Section Notre Histoire */
+.story-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+
+.story-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre subtile pour les titres */
+}
+
+.story-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Image flottante à gauche */
+.story-section img.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+}
+
+@media (max-width: 768px) {
+    .story-section img.float-left {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+/* Section Carte */
+.map-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox pour les colonnes d'informations */
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info, .opening-hours {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-info h3, .opening-hours h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .opening-hours p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .info-columns {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #101010;
+}
+
+footer .footer-section {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton Voir nos salles */
+.btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #ff4500;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Carousel Caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* mention legales */
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; /* Taille du titre, ajustable si besoin */
+    margin-bottom: 30px; /* Espace sous le titre */
+}
+.legal-section {
+    margin-bottom: 30px;
+}
+
+.legal-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.legal-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/*Condition de vente*/
+.terms-section {
+    margin-bottom: 30px;
+}
+
+.terms-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.terms-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/*Page contact*/
+form {
+    margin-top: 30px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: transparent;
+    color: black !important;
+    padding: 10px 20px;
+    border: 2px solid black !important; /* Bordure noire */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour le hover */
+}
+
+form button:hover {
+    background-color: black !important; /* Fond noir au survol */
+    color: white !important; /* Texte blanc au survol */
+}
+
+/* Section supplémentaire avec infos de contact */
+.contact-info-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-info-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.contact-info-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info-card img {
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.contact-details {
+    text-align: left;
+}
+
+.contact-details h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.contact-details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/*Hover deconnexion*/
+.btn-outline-dark:hover {
+    background-color: black !important;
+    color: white !important;
+    border-color: black !important;
+}
+
